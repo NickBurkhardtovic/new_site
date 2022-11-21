@@ -1,0 +1,214 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1E1E1E;
+}
+.red {
+    background-color: red;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    opacity: 1;
+    /* deleite this for dialogue */
+    visibility: hidden;
+    /* deleite this for dialogue */
+    /* Заготовка для будущих анимаций */
+    transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+    transform: scale(1);
+}
+
+#forjs {
+    cursor: pointer;
+    background-color: blue;
+    color: violet;
+    padding: 10px 20px;
+    margin-left: 72px;
+}
+
+.modal-window {
+    width: 600px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 100px auto;    
+}
+.modal-header {
+    display: flex;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+.x-button {
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    margin-left: 451px;
+}
+.modal-title {
+    font-size: 1.5rem;
+}
+.modal-closer {
+    cursor: pointer;
+}
+.modal-footer {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+.ok-button {
+cursor: pointer;
+}
+.cancel-button {
+cursor: pointer;
+}
+.modal-body {
+    padding: 10px;
+}
+.body p {
+    padding: 0 0 5px;
+}
+.nav-bar {
+    background-color: #FFD280;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-logo {
+    box-sizing: content-box;
+    padding-left: 71px;
+    padding-top: 6px;
+    width: 42px;
+    height: 36px;
+
+}
+.nav-items {
+    display: flex;
+    justify-content: right;
+    margin-top: -36px;
+    margin-right: 71px;
+}
+.items {
+    text-decoration: none;
+    color: #0E0C0C;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-left: 33px;
+    transition: 0.1s ease-in-out;
+}
+.items:hover {
+    color: rgb(96, 6, 170);
+    border-bottom: solid rgb(96, 6, 170);   
+}
+.line {
+    width: 49px;
+    height: 6px;
+    background-color: #1E1E1E;
+    border-radius: 2px;
+    margin-top: 7px;
+}
+.burger-button {
+    display: none;
+}
+.header {
+    padding-top: 295px;
+    padding-left: 71px;
+}
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    width: 435px;
+    height: 58px;
+    color: #FFD280;
+}
+.subtitle {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    width: 460px;
+    height: 132px;
+    line-height: 44px;
+    padding-top: 34px;
+}
+
+
+.header-images {
+    display: flex;
+    justify-content: right;
+    margin-top: -420px;
+    padding-right: 70px;
+}
+.img {
+    padding-right: 20px;
+}
+
+.explore-button {
+    cursor: pointer;
+    background-color: #FFD280;
+    color: #0E0C0C;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 14px 44px 18px 44px;
+    font-weight: 600;
+    transition: 0.2s linear;
+}
+.header-button {
+    display: inline-grid;
+}
+.explore-button:hover {
+    background-color: #ffd3807a;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: -70px;
+    text-align: center;
+}
+
+.card {
+    height: 300px;
+    width: 180px;
+    border-radius: 14px;
+    margin-left: 70px;
+    background-color: rgb(196, 195, 195);
+    padding-top: 5px;
+}
+.card-image {
+    width: 166px;
+    border-radius: 14px;
+}
+.card-subtitle {
+}
+.card-button {
+    height: 35px;
+    width: 160px;
+    background-color: #be992a;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 106px;
+    transition: 0.2s;
+
+}
+.card-button:hover {
+    background-color: #7a591b;
+      
+}
+@media (max-width: 1240px ) {
+    
+    .header-images {
+        padding-top: 550px;
+        justify-content: center;
+    }
+}
+@media (max-width: 650px) {
+    .nav-items {
+        display: none;
+    }
+    .nav-bar {
+        width: 1000px;
+    }
+}
